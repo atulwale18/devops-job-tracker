@@ -1,2 +1,42 @@
-# devops-job-tracker
-A full-stack web application to track and manage job applications, including company, position, location, status, and interview details. The application is containerized with Docker and deployed on AWS EC2 with MySQL on RDS, using Jenkins for CI/CD and Terraform for infrastructure automation.
+# 🚀 DevOps Job Tracker
+
+A full-stack job application tracking system designed and deployed using modern DevOps practices.
+
+## 📌 Project Overview
+
+DevOps Job Tracker helps users manage their job applications from a single dashboard.
+
+Users can:
+
+- Add job applications
+- View applications
+- Update application status
+- Delete applications
+- Search applications
+- Filter applications by status
+- View application statistics
+- Open job links
+- Add notes for each application
+
+## 🏗️ Architecture
+
+```text
+                    GitHub
+                       |
+                       v
+                    Jenkins
+                       |
+                       v
+                    Docker
+                       |
+                       v
+                    AWS EC2
+                       |
+              +--------+--------+
+              |                 |
+              v                 v
+          React + Nginx     Node.js API
+                                |
+                                v
+                            AWS RDS
+                            MySQL
